@@ -8,7 +8,7 @@
 
 - **Uniqueness Verification:** Automatically checks for duplicate values in specified ACF fields.
 - **Admin Notices:** Displays clear notifications if a duplicate value is found, guiding users to resolve the issue.
-- **Seamless Integration:** Works with ACF and is compatible with both custom post types and standard WordPress posts.
+- **Seamless Integration:** Works with ACF and is compatible out of the box.
 - **Customizable Settings:** Configure which ACF fields require uniqueness checks through the plugin’s settings.
 - **Secure and Reliable:** Uses WordPress best practices for validation and redirection.
 
@@ -25,16 +25,51 @@
 
 ### Support
 
-For support or feature requests, please contact us via [Support Page URL] or create an issue on [GitHub Repository URL].
+For support or feature requests, please contact us via [Support Page URL](https://primastech.com.ng/support)
 
 ### Changelog
 
 #### 1.0.0
 - Initial release with core functionality to check for duplicate ACF field values.
 
-### License
 
-This plugin is licensed under the [GPL-2.0 License](https://opensource.org/licenses/GPL-2.0).
+### PRO (Coming soon)
+
+## Advanced Field Type Support
+- Extend unique validation to more advanced field types, such as select fields, relationship fields, or repeater fields.
+- Added settings page to configure which fields require uniqueness checks.
+
+## Custom Error Handling
+- Allow users to define their own error messages for different scenarios.
+- Support for multiple languages and localization of error messages.
+
+## Dashboard and Reports
+- Generate and display reports on fields with duplicate values.
+- Provide an admin dashboard widget to monitor field uniqueness status.
+
+## Admin Interface Enhancements
+- Add visual indicators in the admin UI for fields that have uniqueness constraints.
+- Allow users to apply or remove unique constraints in bulk.
+
+## Enhanced Performance
+- Automate database indexing for fields with unique constraints.
+- implementation of caching mechanisms.
+
+## API Integration
+- Expose endpoints for managing and configuring unique field settings via the WordPress REST API.
+
+## User Permissions and Roles
+- Provide settings to control who can configure or manage unique constraints based on user roles.
+- Limit access to premium features based on user roles or subscription levels.
+
+## Support and Documentation
+-  Offer dedicated support channels for premium users.
+-  Provide detailed documentation, including video tutorials and advanced use cases.
+
+
+Upgrade to PRO [Upgrade to PRO](https://primastech.com.ng/plugins/acf-unique-field-guard)
+
+
 
 ---
 
