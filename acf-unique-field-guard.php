@@ -4,11 +4,11 @@
  *  ACF Unique Field Guard
  *
  * @package 		ACF_Unique_Field_Guard
- * @author  		Abiodun Paul Ogunnaike <primastech101@gmail.com>
+ * @author  		Abiodun Paul Ogunnaike <ayo_ogunnaike@yahoo.com>
  *
  * Plugin Name:     ACF Unique Field Guard
  * Plugin URI:      https://primastech.com.ng/plugins/acf-unique-field-guard
- * Description:     Adds a validation option to ACF fields to enforce unique values across posts.
+ * Description:     Adds a unique validation option to ACF fields to enforce unique values across posts.
  * Author:          Abiodun Paul Ogunnaike
  * Author URI:      https://primastech.com.ng/
  * Text Domain:     acf-unique-field-guard

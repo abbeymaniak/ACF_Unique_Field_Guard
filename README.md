@@ -1,3 +1,14 @@
+=== ACF Unique Field Guard ===
+Contributors: abbeymaniak
+Donate link: https://www.buymeacoffee.com/abbeymaniak
+Tags: acf, unique, unique field, guard
+Requires at least: 4.5
+Tested up to: 6.3.2
+Requires PHP: 5.6
+Stable tag: 1.0.0
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
 # ACF Unique Field Guard
 
 ## Description
@@ -22,6 +33,12 @@
 
 - Once activated, the plugin will automatically check for duplicate values in the ACF fields you configure.
 - If a duplicate is detected, the user will be redirected back to the edit page with an admin notice informing them of the issue.
+
+== Screenshots ==
+
+1. Name and Activation of the plugin.
+2. location of the checkbox on the custom field.
+3. location of the unique checkbox activated on the custom field.
 
 ### Support
 

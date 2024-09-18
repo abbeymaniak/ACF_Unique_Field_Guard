@@ -5,6 +5,9 @@
  *
  * @package ACF_Unique_Field_Guard
  * @author  Abiodun Paul Ogunnaike <primastech101@gmail.com>
+ * 
+ * Requires PHP:      7.4
+ * Requires at least PHP: 6.0
  */
 
 if (!class_exists('ACF_Unique_Field_Guard')) {
@@ -22,6 +25,7 @@ if (!class_exists('ACF_Unique_Field_Guard')) {
         public function __construct()
         {
             add_action('plugins_loaded', array($this, 'check_acf_active'));
+
         }
         /**
          * Check if ACF is installed and active.
@@ -39,6 +43,9 @@ if (!class_exists('ACF_Unique_Field_Guard')) {
             //add actions and filters if ACF is active
             add_action('acf/field_group/render_field_settings_tab/validation', array($this, 'add_unique_field_setting'));
             add_filter('acf/validate_value', array($this, 'validate_unique_meta_field'), 10, 4);
+            add_filter('plugin_action_links', [$this, 'add_get_pro_now_link'], 10, 2);
+            add_filter('plugin_row_meta', [$this, 'add_get_pro_now_link'], 10, 2);
+
 
         }
 
@@ -163,6 +170,27 @@ if (!class_exists('ACF_Unique_Field_Guard')) {
 
             return $valid;
         }
+
+
+        /**
+         * Add the get pro link.
+         *
+         * @param string|array $links This is the link
+         * @param string       $file  This is ths url path to the main file
+         *
+         * @return void
+         */
+        public function add_get_pro_now_link($links, $file)
+        {
+
+            if ($file == 'acf-unique-field-guard/acf-unique-field-guard.php') {
+                $pro_link = '<a href="https:primastech.com.ng/plugins/acf-unique-field-guard" target="_blank" style="color: red; font-weight: bold;" >Get Pro Now</a>';
+                array_unshift($links, $pro_link);
+            }
+            return $links;
+        }
     }
+
+
 
 }
