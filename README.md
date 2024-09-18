@@ -66,6 +66,8 @@ For support or feature requests, please contact us via [Support Page URL](https:
 -  Offer dedicated support channels for premium users.
 -  Provide detailed documentation, including video tutorials and advanced use cases.
 
+Join the waiting [Join the waiting List](https://primastech.com.ng/plugins/acf-unique-field-guard)
+to be notified when the PRO version is released.
 
 Upgrade to PRO [Upgrade to PRO](https://primastech.com.ng/plugins/acf-unique-field-guard)
 
