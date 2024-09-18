@@ -1,115 +1,95 @@
-=== Acf Unique Field Guard ===
-Contributors: (this should be a list of wordpress.org userid's)
-Donate link: https://example.com/
-Tags: comments, spam
+=== ACF Unique Field Guard ===
+Contributors: abbeymaniak
+Donate link: https://www.buymeacoffee.com/abbeymaniak
+Tags: acf, unique, unique field, guard
 Requires at least: 4.5
-Tested up to: 6.6.2
+Tested up to: 6.6
 Requires PHP: 5.6
-Stable tag: 0.1.0
-License: GPLv2 or later
+Stable tag: 1.0.0
+License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+# ACF Unique Field Guard
 
-== Description ==
+## Description
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+**ACF Unique Field Guard** is a WordPress plugin designed to ensure the uniqueness of Advanced Custom Fields (ACF) values. By automatically checking for duplicates during post saves, this plugin helps maintain data integrity and prevents the reuse of the same values across your site for fields that needs to be unique.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+### Key Features
 
-A few notes about the sections above:
+- **Uniqueness Verification:** Automatically checks for duplicate values in specified ACF fields.
+- **Admin Notices:** Displays clear notifications if a duplicate value is found, guiding users to resolve the issue.
+- **Seamless Integration:** Works with ACF and is compatible out of the box.
+- **Customizable Settings:** Configure which ACF fields require uniqueness checks through the plugin’s settings.
+- **Secure and Reliable:** Uses WordPress best practices for validation and redirection.
 
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
+### Installation
 
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
+1. Upload the `acf-unique-field-guard` folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Go to the ACF custom field under validation tab and activate the checkbox.
 
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+### Usage
 
-== Installation ==
-
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
-
-== Frequently Asked Questions ==
-
-= A question that someone might have =
-
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
+- Once activated, the plugin will automatically check for duplicate values in the ACF fields you configure.
+- If a duplicate is detected, the user will be redirected back to the edit page with an admin notice informing them of the issue.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. Name and Activation of the plugin.
+2. location of the checkbox on the custom field.
+3. location of the unique checkbox activated on the custom field.
 
-== Changelog ==
+### Support
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
+For support or feature requests, please contact us via [Support Page URL](https://primastech.com.ng/support)
 
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
+### Changelog
 
-== Upgrade Notice ==
+#### 1.0.0
+- Initial release with core functionality to check for duplicate ACF field values.
 
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
 
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
+### PRO (Coming soon)
 
-== Arbitrary section ==
+## Advanced Field Type Support
+- Extend unique validation to more advanced field types, such as select fields, relationship fields, or repeater fields.
+- Added settings page to configure which fields require uniqueness checks.
 
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
+## Custom Error Handling
+- Allow users to define their own error messages for different scenarios.
+- Support for multiple languages and localization of error messages.
 
-== A brief Markdown Example ==
+## Dashboard and Reports
+- Generate and display reports on fields with duplicate values.
+- Provide an admin dashboard widget to monitor field uniqueness status.
 
-Ordered list:
+## Admin Interface Enhancements
+- Add visual indicators in the admin UI for fields that have uniqueness constraints.
+- Allow users to apply or remove unique constraints in bulk.
 
-1. Some feature
-1. Another feature
-1. Something else about the plugin
+## Enhanced Performance
+- Automate database indexing for fields with unique constraints.
+- implementation of caching mechanisms.
 
-Unordered list:
+## API Integration
+- Expose endpoints for managing and configuring unique field settings via the WordPress REST API.
 
-* something
-* something else
-* third thing
+## User Permissions and Roles
+- Provide settings to control who can configure or manage unique constraints based on user roles.
+- Limit access to premium features based on user roles or subscription levels.
 
-Here's a link to [WordPress](https://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
+## Support and Documentation
+-  Offer dedicated support channels for premium users.
+-  Provide detailed documentation, including video tutorials and advanced use cases.
 
-[markdown syntax]: https://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
+Join the waiting [Join the waiting List](https://primastech.com.ng/plugins/acf-unique-field-guard)
+to be notified when the PRO version is released.
 
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
+Upgrade to PRO [Upgrade to PRO](https://primastech.com.ng/plugins/acf-unique-field-guard)
 
-`<?php code(); // goes in backticks ?>`
+
+
+---
+
+Thank you for using **ACF Unique Field Guard**. Your feedback and suggestions are welcome!

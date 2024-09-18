@@ -5,7 +5,7 @@
  *
  * @package ACF_Unique_Field_Guard
  * @author  Abiodun Paul Ogunnaike <primastech101@gmail.com>
- * 
+ *
  * Requires PHP:      7.4
  * Requires at least PHP: 6.0
  */
@@ -81,9 +81,11 @@ if (!class_exists('ACF_Unique_Field_Guard')) {
          */
         public function acf_missing_notice()
         {
-            echo '<div class="notice notice-error"><p>';
-            _e('ACF Unique Field Guard requires Advanced Custom Fields (ACF) to be installed and active.', 'acf-unique-field-guard');
-            echo '</p></div>';
+			$notice = '<div class="notice notice-error"><p>';
+			$notice .=  __('ACF Unique Field Guard requires Advanced Custom Fields (ACF) to be installed and active.',  'acf-unique-field-guard');
+            $notice .='</p></div>';
+
+			echo esc_html($notice);
         }
 
 
@@ -143,10 +145,12 @@ if (!class_exists('ACF_Unique_Field_Guard')) {
                 return $valid;
             }
 
-            // Get the post ID
-            $post_id = $_POST['post_ID'] ?? null;
+			// Get the post ID
+			$post_id = isset($_POST['post_ID']) ? sanitize_text_field(wp_unslash($_POST['post_ID'])) : null;
+
 
             // Query the database to check if the value already exists
+			// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
             $existing_posts = new WP_Query(
                 array(
                 'post_type' => 'any',
@@ -155,7 +159,7 @@ if (!class_exists('ACF_Unique_Field_Guard')) {
                         'key' => $field['name'],
                         'value' => $value,
                         'compare' => '='
-                ),
+                ), //phpcd:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_post__not_in
                 ),
                 'post__not_in' => $post_id ? array($post_id) : array(),
                 'fields' => 'ids',
@@ -164,8 +168,14 @@ if (!class_exists('ACF_Unique_Field_Guard')) {
             );
 
             // If a post with the same value exists, return an error
+			// phpcs:ignore WordPress.Security.NonceVerification.Missing
+			
             if ($existing_posts->have_posts()) {
-                $valid = __('The value "' . $value . '" for the field "' . $field['label'] . '" already exists.', 'acf-unique-field-guard');
+				 /* Translators: %1$s: field value, %2$s: field label */
+                $valid = sprintf(__('The value "%1$s" for the field "%2$s" already exists.', 'acf-unique-field-guard'),
+				esc_html($value),
+				esc_html($field['label'])
+			);
             }
 
             return $valid;
