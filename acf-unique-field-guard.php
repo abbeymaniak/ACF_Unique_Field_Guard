@@ -1,20 +1,25 @@
 <?php
 
 /**
+ *  ACF Unique Field Guard
+ *
+ * @package 		ACF_Unique_Field_Guard
+ * @author  		Abiodun Paul Ogunnaike <primastech101@gmail.com>
+ *
  * Plugin Name:     ACF Unique Field Guard
  * Plugin URI:      https://github.com/abbeymaniak/Acf_Unique_Field_Guard
- * Description:    	Adds a validation option to ACF fields to enforce unique values across posts.
+ * Description:     Adds a validation option to ACF fields to enforce unique values across posts.
  * Author:          Abiodun Paul Ogunnaike
  * Author URI:      https://www.linkedin.com/in/abiodun-paul-ogunnaike
  * Text Domain:     acf-unique-field-guard
  * Donate:          https://www.buymeacoffee.com/abbeymaniak
  * Domain Path:     /languages
  * Version:         0.1.0
- * prefix:			ACF_Unique_Field_Guard
+ * prefix:          ACF_Unique_Field_Guard
  * License:         GPL v2 or later
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
- *
- * @package         ACF_Unique_Field_Guard
+ * Requires PHP:      7.4
+ * Requires at least: 6.0
  */
 
 // If the file is accessed directly abort script.
