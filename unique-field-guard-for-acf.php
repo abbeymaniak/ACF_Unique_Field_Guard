@@ -3,8 +3,8 @@
 /**
  *  Unique Field Guard For ACF
  *
- * @package 		Unique_Field_Guard_ACF
- * @author  		Abiodun Paul Ogunnaike <ayo_ogunnaike@yahoo.com>
+ * @package Unique_Field_Guard_ACF
+ * @author  Abiodun Paul Ogunnaike <ayo_ogunnaike@yahoo.com>
  *
  * Plugin Name:     Unique Field Guard For ACF
  * Plugin URI:      https://primastech.com.ng/plugins/unique-field-guard-for-acf
