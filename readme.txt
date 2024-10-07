@@ -1,4 +1,4 @@
-=== ACF Unique Field Guard ===
+=== Unique Field Guard For ACF ===
 Contributors: abbeymaniak
 Donate link: https://www.buymeacoffee.com/abbeymaniak
 Tags: acf, unique, unique field, guard
@@ -25,7 +25,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 ### Installation
 
-1. Upload the `acf-unique-field-guard` folder to the `/wp-content/plugins/` directory.
+1. Upload the `unique-field-guard-for-acf` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to the ACF custom field under validation tab and activate the checkbox.
 
@@ -83,10 +83,10 @@ For support or feature requests, please contact us via [Support Page URL](https:
 -  Offer dedicated support channels for premium users.
 -  Provide detailed documentation, including video tutorials and advanced use cases.
 
-Join the waiting [Join the waiting List](https://primastech.com.ng/plugins/acf-unique-field-guard)
+Join the waiting [Join the waiting List](https://primastech.com.ng/plugins/unique-field-guard-for-acf)
 to be notified when the PRO version is released.
 
-Upgrade to PRO [Upgrade to PRO](https://primastech.com.ng/plugins/acf-unique-field-guard)
+Upgrade to PRO [Upgrade to PRO](https://primastech.com.ng/plugins/unique-field-guard-for-acf)
 
 
 

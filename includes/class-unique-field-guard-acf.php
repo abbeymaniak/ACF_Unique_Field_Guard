@@ -3,21 +3,21 @@
 /**
  * This class represents a custom functionality in the ACF unique field guard.
  *
- * @package ACF_Unique_Field_Guard
+ * @package Unique_Field_Guard_ACF
  * @author  Abiodun Paul Ogunnaike <primastech101@gmail.com>
  *
  * Requires PHP:      7.4
  * Requires at least PHP: 6.0
  */
 
-if (!class_exists('ACF_Unique_Field_Guard')) {
-    /**
-     * This is the ACF_Unique_Field_Guard class.
-     *
-     * @package ACF_Unique_Field_Guard
-     * @author  Abiodun Paul Ogunnaike <primastech101@gmail.com>
-     */
-    class ACF_Unique_Field_Guard
+if (!class_exists('Unique_Field_Guard_ACF')) {
+	/**
+	 * This is the Unique_Field_Guard_For_ACF class.
+	 *
+	 * @package Unique_Field_Guard_For_ACF
+	 * @author  Abiodun Paul Ogunnaike <primastech101@gmail.com>
+	 */
+    class Unique_Field_Guard_For_ACF
     {
         /**
          * Constructor
@@ -82,7 +82,7 @@ if (!class_exists('ACF_Unique_Field_Guard')) {
         public function acf_missing_notice()
         {
 			$notice = '<div class="notice notice-error"><p>';
-			$notice .=  __('ACF Unique Field Guard requires Advanced Custom Fields (ACF) to be installed and active.',  'acf-unique-field-guard');
+			$notice .=  __('Unique Field Guard For ACF requires Advanced Custom Fields (ACF) to be installed and active.',  'unique-field-guard-for-acf');
             $notice .='</p></div>';
 
 			echo esc_html($notice);
@@ -169,10 +169,10 @@ if (!class_exists('ACF_Unique_Field_Guard')) {
 
             // If a post with the same value exists, return an error
 			// phpcs:ignore WordPress.Security.NonceVerification.Missing
-			
+
             if ($existing_posts->have_posts()) {
 				 /* Translators: %1$s: field value, %2$s: field label */
-                $valid = sprintf(__('The value "%1$s" for the field "%2$s" already exists.', 'acf-unique-field-guard'),
+                $valid = sprintf(__('The value "%1$s" for the field "%2$s" already exists.', 'unique-field-guard-for-acf'),
 				esc_html($value),
 				esc_html($field['label'])
 			);
@@ -193,8 +193,8 @@ if (!class_exists('ACF_Unique_Field_Guard')) {
         public function add_get_pro_now_link($links, $file)
         {
 
-            if ($file == 'acf-unique-field-guard/acf-unique-field-guard.php') {
-                $pro_link = '<a href="https:primastech.com.ng/plugins/acf-unique-field-guard" target="_blank" style="color: red; font-weight: bold;" >Get Pro Now</a>';
+            if ($file == 'unique-field-guard-for-acf/unique-field-guard-for-acf.php') {
+                $pro_link = '<a href="https:primastech.com.ng/plugins/unique-field-guard-for-acf" target="_blank" style="color: red; font-weight: bold;" >Get Pro Now</a>';
                 array_unshift($links, $pro_link);
             }
             return $links;

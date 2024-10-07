@@ -1,4 +1,4 @@
-=== ACF Unique Field Guard ===
+=== Unique Field Guard For ACF ===
 Contributors: abbeymaniak
 Donate link: https://www.buymeacoffee.com/abbeymaniak
 Tags: acf, unique, unique field, guard
@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-# ACF Unique Field Guard
+# Unique Field Guard For ACF
 
 ## Description
 
-**ACF Unique Field Guard** is a WordPress plugin designed to ensure the uniqueness of Advanced Custom Fields (ACF) values. By automatically checking for duplicates during post saves, this plugin helps maintain data integrity and prevents the reuse of the same values across your site for fields that needs to be unique.
+**Unique Field Guard For ACF** is a WordPress plugin designed to ensure the uniqueness of Advanced Custom Fields (ACF) values. By automatically checking for duplicates during post saves, this plugin helps maintain data integrity and prevents the reuse of the same values across your site for fields that needs to be unique.
 
 ### Key Features
 
@@ -25,7 +25,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 ### Installation
 
-1. Upload the `acf-unique-field-guard` folder to the `/wp-content/plugins/` directory.
+1. Upload the `unique-field-guard-for-acf` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to the ACF custom field under validation tab and activate the checkbox.
 
@@ -83,13 +83,13 @@ For support or feature requests, please contact us via [Support Page URL](https:
 -  Offer dedicated support channels for premium users.
 -  Provide detailed documentation, including video tutorials and advanced use cases.
 
-Join the waiting [Join the waiting List](https://primastech.com.ng/plugins/acf-unique-field-guard)
+Join the waiting [Join the waiting List](https://primastech.com.ng/plugins/unique-field-guard-for-acf)
 to be notified when the PRO version is released.
 
-Upgrade to PRO [Upgrade to PRO](https://primastech.com.ng/plugins/acf-unique-field-guard)
+Upgrade to PRO [Upgrade to PRO](https://primastech.com.ng/plugins/unique-field-guard-for-acf)
 
 
 
 ---
 
-Thank you for using **ACF Unique Field Guard**. Your feedback and suggestions are welcome!
+Thank you for using **Unique Field Guard For ACF**. Your feedback and suggestions are welcome!

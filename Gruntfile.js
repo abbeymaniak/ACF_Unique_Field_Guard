@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
 		addtextdomain: {
 			options: {
-				textdomain: 'acf-unique-field-guard',
+				textdomain: 'unique-field-guard-for-acf',
 			},
 			update_all_domains: {
 				options: {
@@ -32,8 +32,8 @@ module.exports = function( grunt ) {
 				options: {
 					domainPath: '/languages',
 					exclude: [ '\.git/*', 'bin/*', 'node_modules/*', 'tests/*' ],
-					mainFile: 'acf-unique-field-guard.php',
-					potFilename: 'acf-unique-field-guard.pot',
+					mainFile: 'unique-field-guard-for-acf.php',
+					potFilename: 'unique-field-guard-for-acf.pot',
 					potHeaders: {
 						poedit: true,
 						'x-poedit-keywordslist': true

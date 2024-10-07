@@ -1,6 +1,6 @@
 
 {
-  "name": "acf-unique-field-guard",
+  "name": "unique-field-guard-for-acf",
   "version": "0.1.0",
   "main": "Gruntfile.js",
   "author": "YOUR NAME HERE",
