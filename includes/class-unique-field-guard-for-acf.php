@@ -45,9 +45,20 @@ if (!class_exists('Unique_Field_Guard_ACF')) {
             add_filter('acf/validate_value', array($this, 'validate_unique_meta_field'), 10, 4);
             add_filter('plugin_action_links', [$this, 'add_get_pro_now_link'], 10, 2);
             add_filter('plugin_row_meta', [$this, 'add_get_pro_now_link'], 10, 2);
+			add_action('init', [$this, 'unique_languages']);
 
 
         }
+
+		/**
+		 * This function handles the translation.
+		 *
+		 * @return void
+		 */
+		public function unique_languages(){
+
+			load_plugin_textdomain('unique-field-guard-for-acf', false, dirname(plugin_basename(__FILE__)) .'/languages');
+		}
 
         /**
          * This function renders the checkbox ui in the validation tab of the custom field.
@@ -61,8 +72,8 @@ if (!class_exists('Unique_Field_Guard_ACF')) {
 
             acf_render_field_setting(
                 $field, array(
-                'label' => __('Unique', 'acf'),
-                'instructions' => __('Ensure this field has a unique value across posts.', 'acf'),
+                'label' => __('Unique', 'unique-field-guard-for-acf'),
+                'instructions' => __('Ensure this field has a unique value across posts.', 'unique-field-guard-for-acf'),
                 'name' => 'unique',
                 'type' => 'true_false',
                 'ui' => 1,
@@ -108,8 +119,8 @@ if (!class_exists('Unique_Field_Guard_ACF')) {
             // Add "Unique" checkbox setting in the Validation tab
             acf_render_field_setting(
                 $field, array(
-                'label' => __('Unique', 'acf'),
-                'instructions' => __('Ensure this field has a unique value across posts.', 'acf'),
+                'label' => __('Unique', 'unique-field-guard-for-acf'),
+                'instructions' => __('Ensure this field has a unique value across posts.', 'unique-field-guard-for-acf'),
                 'name' => 'unique',
                 'type' => 'true_false',
                 'ui' => 1,

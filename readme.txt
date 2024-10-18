@@ -42,7 +42,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 ### Support
 
-For support or feature requests, please contact us via [Support Page URL](https://primastech.com.ng/support)
+For support or feature requests, please contact us via [Support Page URL](https://primastech.com/support)
 
 ### Changelog
 
@@ -83,10 +83,10 @@ For support or feature requests, please contact us via [Support Page URL](https:
 -  Offer dedicated support channels for premium users.
 -  Provide detailed documentation, including video tutorials and advanced use cases.
 
-Join the waiting [Join the waiting List](https://primastech.com.ng/plugins/unique-field-guard-for-acf)
+Join the waiting [Join the waiting List](https://primastech.com/product/unique-field-guard-for-acf/)
 to be notified when the PRO version is released.
 
-Upgrade to PRO [Upgrade to PRO](https://primastech.com.ng/plugins/unique-field-guard-for-acf)
+Upgrade to PRO [Upgrade to PRO](https://primastech.com/product/unique-field-guard-for-acf/)
 
 
 
