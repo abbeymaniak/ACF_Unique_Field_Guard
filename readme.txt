@@ -92,4 +92,4 @@ Upgrade to PRO [Upgrade to PRO](https://primastech.com/product/unique-field-guar
 
 ---
 
-Thank you for using **ACF Unique Field Guard**. Your feedback and suggestions are welcome!
+Thank you for using **Unique Field Guard For ACF**. Your feedback and suggestions are welcome!
