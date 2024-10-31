@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-# ACF Unique Field Guard
+# Unique Field Guard For ACF
 
 ## Description
 
-**ACF Unique Field Guard** is a WordPress plugin designed to ensure the uniqueness of Advanced Custom Fields (ACF) values. By automatically checking for duplicates during post saves, this plugin helps maintain data integrity and prevents the reuse of the same values across your site for fields that needs to be unique.
+**Unique Field Guard For ACF** is a WordPress plugin designed to ensure the uniqueness of Advanced Custom Fields (ACF) values. By automatically checking for duplicates during post saves, this plugin helps maintain data integrity and prevents the reuse of the same values across your site for fields that needs to be unique.
 
 ### Key Features
 
@@ -40,15 +40,28 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 2. location of the checkbox on the custom field.
 3. location of the unique checkbox activated on the custom field.
 
+== Frequently Asked Questions ==
+#### Q: Does this plugin work with all ACF field types?
+A: This version supports text, number, and basic fields. Advanced field support, like select or repeater fields, is planned for the PRO version.
+
+#### Q: Can I customize the error message?
+A: Currently, the error message is fixed. The PRO version will allow custom error messages.
+
+#### Q: How do I specify which fields require unique values?
+A: In the ACF field editor, you can enable the unique constraint for each field under the validation tab.
+
+
 ### Support
 
 For support or feature requests, please contact us via [Support Page URL](https://primastech.com/support)
 
-### Changelog
-
+== Changelog ==
 #### 1.0.0
 - Initial release with core functionality to check for duplicate ACF field values.
 
+== Upgrade Notice ==
+#### 1.0.0
+- Initial release with core functionality to check for duplicate ACF field values.
 
 ### PRO (Coming soon)
 

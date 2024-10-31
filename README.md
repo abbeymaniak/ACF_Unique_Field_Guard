@@ -40,15 +40,28 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 2. location of the checkbox on the custom field.
 3. location of the unique checkbox activated on the custom field.
 
+### Frequently Asked Questions
+#### Q: Does this plugin work with all ACF field types?
+A: This version supports text, number, and basic fields. Advanced field support, like select or repeater fields, is planned for the PRO version.
+
+#### Q: Can I customize the error message?
+A: Currently, the error message is fixed. The PRO version will allow custom error messages.
+
+#### Q: How do I specify which fields require unique values?
+A: In the ACF field editor, you can enable the unique constraint for each field under the validation tab.
+
+
 ### Support
 
 For support or feature requests, please contact us via [Support Page URL](https://primastech.com/support)
 
 ### Changelog
-
 #### 1.0.0
 - Initial release with core functionality to check for duplicate ACF field values.
 
+### Upgrade Notice
+#### 1.0.0
+- Initial release with core functionality to check for duplicate ACF field values.
 
 ### PRO (Coming soon)
 
